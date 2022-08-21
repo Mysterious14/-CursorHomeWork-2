@@ -16,4 +16,5 @@ for(let i=NumberN; i<=NumberM; i++){
     else result+=i;
 
 }
+alert(`Your result = ${result}`)
 console.log(`Your result = ${result}`);
