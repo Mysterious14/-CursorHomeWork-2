@@ -1,22 +1,17 @@
 let NumberN;
-while(!Number.isInteger(NumberN)){
+NumberN = +prompt("Enter your N (integer)");
+while(!Number.isInteger(NumberN) || NumberN<0 || NumberN==''){
+    alert("Enter correct values");
     NumberN = +prompt("Enter your N (integer)");
-    if(!Number.isInteger(NumberN)){
-        alert("Enter correct values");
-    }
-    
 
     
 }
 let NumberM;
-while(!Number.isInteger(NumberM)){
+NumberM = +prompt("Enter your M (integer)");
+while(!Number.isInteger(NumberM) || NumberM<0 || NumberM==''){
     
     NumberM = +prompt("Enter your M (integer)");
     
-    if(!Number.isInteger(NumberM)){
-        alert("Enter correct values");
-        continue;
-    }
     while(NumberN>=NumberM){
         NumberM = +prompt("I need M>N. Enter your M");
     }
